@@ -5,7 +5,6 @@
 
 (defonce c (create-primitive :sphere))
 
-(comment
 (defn move!
   [go v3]
   (set! (.. go transform position)
@@ -17,9 +16,4 @@
   (let [offset (Vector3. 0.01 0 0)]
     (move! go offset)))
 
-(defn test!
-  [_ _]
-  (log "test"))
-
 (hook+ c :update :move #'test!)
-)
