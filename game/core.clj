@@ -3,7 +3,7 @@
             [arcadia.linear :as l])
   (:import [UnityEngine Vector3]))
 
-(defonce c (create-primitive :sphere))
+(defonce c (create-primitive :cube))
 
 (defn move!
   [go v3]
